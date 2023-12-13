@@ -1,0 +1,40 @@
+{
+  "hyper_params": {
+    "num_classes": 3,
+    "num_units": 200,
+    "max_length": 230,
+    "embedding_dim": 300,
+    "lr": 1e-4
+  },
+  "metrics": [
+    "accuracy",
+    "f1"
+  ],
+  "train": {
+    "epochs": 1000,
+    "save_dir": "/training_checkpoints/",
+    "checkpoint_prefix": "ckpt"
+  },
+  "test": {
+    "model_dir": "/training_checkpoints/"
+  },
+  "embedding": {
+    "source_path": "/vectors/vectors-ko.txt",
+    "target_path": "/vectors/vectors-en.txt",
+    "num_max": 50000,
+    "embedding_dim": 300
+  },
+  "dataset": {
+    "raw": {
+      "train_file": "/data/train",
+      "test_file": "/data/test"
+    },
+    "preprocessed": {
+      "train_x": "/preprocessed/train_x",
+      "train_y": "/preprocessed/train_y",
+      "test_x": "/preprocessed/test_x",
+      "test_y": "/preprocessed/test_y"
+    },
+    "batch_size": 32
+  }
+}
