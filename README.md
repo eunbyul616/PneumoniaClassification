@@ -1,4 +1,4 @@
-## Classification of Pneumonia in X-ray/CT Image Reports
+# Classification of Pneumonia in X-ray/CT Image Reports
 
 **Introduction**
 ---
